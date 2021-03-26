@@ -1,0 +1,10 @@
+{
+  "Chassis": "<p>Chassis:<p><li>Nahezu maximale Fahrzeuglänge (205 mm)</li><li>Minimale Breite (60 mm)</li><li>Luftkanal (22,5x12 mm) unter dem Auto</li><li>Abgerundete Kanten</li><li>Zulauf zur Patronenkammer</li>",
+  "Rad": "<p>Räder:</p><li>Drehen der Räder durch GISMA</li><li>Minimale Maße (Durchmesser, Breite, Dicke der Lauffläche)</li><p>Radkappen:</p><li>Befestigung auf der Achse</li><li>Maße größtmöglich</li>",
+  "FlgV": "<p>Frontflügel</p><li>In die Länge gestreckt</li><li>Zunehmende Steigung</li><li>Seitliche Abrundung</li>",
+  "FlgH": "<p>Heckflügel</p><li>Maße geringstmöglich</li><li>Aerodynamische Formung an Vorder-und Hinterseite</li><li>Endplatten als Flügel-Trägerstruktur</li>",
+  "FlgVM": "<p>Regularien entsprechender Frontflügel:</p><li>„Wand“ als Flügel-Trägerstruktur</li><li>Maße geringstmöglich</li><li>Aerodynamische Formung an Vorder-und Hinterseite</li>",
+  "Fe": "<p>Führungselemente</p><li>Halterung aus drei Streben</li><li>Eingesetzte Teflonhülsen</li>",
+  "SkM": "<p>Seitenkästen</p><li>Maße auf Breite und Durchmesser der Räder abgestimmt</li><li>Große Öffnung an der Vorderseite</li><li>Aushöhlung an der Unterseite</li>",
+  "SkH": "<p>Hintere Seitenkästen</p><li>Maße an der Vorderseite auf Breite und Durchmesser der Räder abgestimmt</li><li>Nach hinten zusammenlaufende Form</li><li>Aushöhlung an der Unterseite</li>"
+}

@@ -1,0 +1,469 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@200;400&display=swap");
+
+/* GENERAL STUFF */
+:root {
+  --background: #ffffff;
+  --contrast: #000000;
+  --shadow: #000000;
+  --desire: #eb3b5a;
+  --wish: #eb3b5aaa;
+  --text: #000000;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+}
+
+::selection {
+  color: var(--background);
+  background-color: var(--wish);
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 7em;
+  background-color: transparent;
+  font-family: "Jost", sans-serif;
+}
+
+h2,
+h3 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #000000;
+  word-wrap: break-word;
+  color: var(--contrast);
+  padding: 0.5em 0.5em 1em 0;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  color: #000000;
+  color: var(--text);
+  padding-bottom: 1em;
+}
+
+p a {
+  position: relative;
+
+  color: #000000;
+  color: var(--desire);
+  text-decoration: none;
+}
+
+p a::after {
+  position: absolute;
+
+  left: 0;
+  width: 0%;
+  top: 1.2em;
+  height: 2px;
+  content: "";
+  background-color: var(--desire);
+
+  transition: all 0.2s ease-in-out;
+}
+
+p a:hover::after,
+p a:focus::after {
+  width: 100%;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.link-wrap a {
+  color: var(--contrast);
+}
+
+/* NAVIGATION AND CHILDREN */
+nav {
+  position: fixed;
+  display: flex;
+
+  height: 7em;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+  flex-direction: row;
+  background-color: #ffffff;
+  justify-content: space-evenly;
+  background-color: var(--background);
+
+  transition: all 0.5s ease-in-out;
+}
+
+nav img {
+  position: relative;
+
+  height: 5em;
+  padding: 1em;
+}
+
+nav.shadow {
+  box-shadow: 0 0 20px 0 var(--shadow);
+}
+
+.link-wrap {
+  overflow: hidden;
+  margin-top: 2.35em;
+}
+
+.link-wrap a {
+  position: relative;
+
+  overflow: hidden;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0 24px 0 24px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.link-wrap a:hover,
+.link-wrap a:focus {
+  color: var(--desire);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.link-wrap a::after,
+.link-wrap a::after {
+  position: absolute;
+
+  left: 0;
+  top: 2em;
+  width: 0%;
+  height: 4px;
+  content: "";
+  background-color: var(--desire);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.link-wrap a:hover::after,
+.link-wrap a:focus::after {
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: var(--desire);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.link-wrap a.active {
+  color: var(--desire);
+}
+
+.burger {
+  display: none;
+
+  height: 20px;
+  padding: 1em;
+  overflow: hidden;
+  margin-top: calc(calc(7em / 2) - 1.7em);
+}
+
+.burger div {
+  width: 32px;
+  height: 4px;
+  margin-bottom: 4px;
+  background-color: #000000;
+  background-color: var(--contrast);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.burger.active .line2 {
+  opacity: 0;
+}
+
+.burger.active .line1 {
+  transform: rotate(45deg) translateY(11px);
+}
+
+.burger.active .line3 {
+  transform: rotate(-45deg) translateY(-11px);
+}
+
+.logo-wrap {
+  overflow-y: hidden;
+}
+
+.logo-wrap svg {
+  height: 7em;
+  width: auto;
+}
+
+.logo-wrap svg g:nth-child(1) path,
+.logo-wrap svg g:nth-child(2) path {
+  fill: white;
+}
+
+.logo-text {
+  position: absolute;
+  display: inline;
+
+  top: 50%;
+  font-size: 1.5em;
+  text-shadow: none;
+  padding: 0 24px 0 24px;
+  transform: translateY(-50%);
+  font-family: "Jost", "Poppins", sans-serif;
+}
+
+/* MAIN */
+main {
+  margin-top: 8em;
+  margin-bottom: 8vh;
+}
+
+section {
+  width: 60vw;
+  overflow: hidden;
+  padding: 8em 20vw 4em 20vw;
+}
+
+section:first-child {
+  padding: 0em 20vw 4em 20vw;
+}
+
+footer {
+  position: sticky;
+  display: flex;
+
+  bottom: 0;
+  width: 60vw;
+  height: 10vh;
+  padding: 0 20vw;
+  overflow-y: hidden;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+footer a img {
+  width: 3vh;
+  height: 3vh;
+  opacity: 0.5;
+  filter: grayscale(1);
+  background-color: transparent;
+
+  transition: all 0.2s;
+}
+
+footer a {
+  padding-left: 1em;
+  color: var(--text);
+  background-color: transparent;
+}
+
+footer a::after {
+  display: none;
+}
+
+footer a:hover,
+footer a:hover img {
+  opacity: 1;
+  filter: grayscale(0);
+
+  transition: all 0.2s;
+}
+
+footer p {
+  padding: 0;
+  opacity: 0.4;
+  background-color: transparent;
+
+  transition: all 0.2s;
+}
+
+footer p:hover,
+footer p:focus {
+  opacity: 0.8;
+
+  transition: all 0.2s;
+}
+
+.social-wrapper {
+  display: flex;
+
+  width: 50%;
+  color: transparent;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+
+  top: -7em;
+  visibility: hidden;
+}
+
+.exclude-shadow {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1400px) and (min-width: 1000px) {
+  .logo-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    padding: 0 0 0.5em 0;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    padding: 0 0 0 0;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  section {
+    width: 84vw;
+    padding: 8em 8vw 8vh 8vw;
+  }
+
+  section:first-child {
+    padding: 0em 8vw 8vh 8vw;
+  }
+
+  nav.active {
+    height: 100vh;
+    box-shadow: 0 0 20px 0 var(--shadow);
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .link-wrap {
+    position: absolute;
+    display: flex;
+
+    left: 0;
+    top: 5em;
+    height: 0;
+    opacity: 0;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background);
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .link-wrap a::after,
+  #link-wrap a::after {
+    display: none;
+
+    transition: all 0.2s;
+  }
+
+  .link-wrap a {
+    opacity: 0;
+    padding: 1em 1em 1em 1em;
+  }
+
+  nav.active .link-wrap {
+    padding: 0;
+    opacity: 1;
+    height: 75vh;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav.active .link-wrap a:nth-child(1) {
+    animation: fadeIn forwards ease-in-out 0.2s 0.1s;
+  }
+
+  nav.active .link-wrap a:nth-child(2) {
+    animation: fadeIn forwards ease-in-out 0.2s 0.2s;
+  }
+
+  nav.active .link-wrap a:nth-child(3) {
+    animation: fadeIn forwards ease-in-out 0.2s 0.3s;
+  }
+
+  nav.active .link-wrap a:nth-child(4) {
+    animation: fadeIn forwards ease-in-out 0.2s 0.4s;
+  }
+
+  nav.active .link-wrap a:nth-child(5) {
+    animation: fadeIn forwards ease-in-out 0.2s 0.5s;
+  }
+
+  nav .link-wrap a {
+    animation: fadeOut backwards ease-in-out 0.2s;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  footer {
+    width: 84vw;
+    padding: 0 8vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-text {
+    display: none;
+  }
+}
+
+/* DARKMODE IF SET BY SYSTEM */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --contrast: #fefefe;
+    --shadow: #000000;
+    --desire: #eb3b5a;
+    --wish: #eb3b5aaa;
+    --text: #ffffff;
+  }
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
