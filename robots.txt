@@ -1,0 +1,9 @@
+# Robots policy for https://vicito.de/
+
+user-agent: *
+
+allow: /assets/team/
+allow: /assets/renders/
+
+disallow: /assets/
+disallow: /model-interactive.html
