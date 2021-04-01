@@ -17,11 +17,6 @@ const updateLinks = (path) => {
   document.getElementById("start").classList.add("active");
 }
 
-const applyParallax = (element, distance, speed) => {
-  const item = document.querySelector(element);
-  item.style.transform = `translateY(${distance * speed}px)`;
-}
-
 const applyNavigationShadow = (distance) => {
   const nav = document.querySelector("nav");
 
@@ -30,12 +25,12 @@ const applyNavigationShadow = (distance) => {
   if (distance > 1) nav.classList.add("shadow");
 }
 
-const updateScroll = () => {
-  let scrolled = window.pageYOffset;
 
-  // FIXME: CSS ONYL SOLUTION
-  // applyParallax(".verhicle", scrolled, 0.3);
+const updateScroll = () => {
+  const scrolled = window.scrollY;
+
   applyNavigationShadow(scrolled);
+  if (window.innerWidth >= 1118) document.querySelector(".vehicle").style.top = "calc(50% - " + (scrolled / 3) + "px)";
 }
 
 window.addEventListener("scroll", updateScroll);
@@ -49,6 +44,7 @@ if (burger) {
 
 updateLinks(`${location.origin}${location.pathname}`);
 
+// TODO: Use
 const setCurrentColorTheme = (theme) => {
   let variables = document.documentElement.style;
 
@@ -131,4 +127,7 @@ const initializeTimer = (selector, endtime) => {
   }, 1000);
 }
 
+// TODO: Use
 // initializeTimer("#countdown", competition);
+
+// TODO: Languages
