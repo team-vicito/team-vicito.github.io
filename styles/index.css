@@ -1,3 +1,7 @@
+#parallax {
+  height: 100vh;
+}
+
 /* MAIN */
 .title,
 .subtitle {
@@ -57,11 +61,6 @@
 
 #countdown span {
   color: var(--desire);
-}
-
-section:first-child {
-  height: 80vh;
-  padding: 0 20vw 0 20vw;
 }
 
 .timeline {
