@@ -1,40 +1,50 @@
 body {
-    margin: 100px auto;
-    max-width: 950px;
-    padding: 1em;
+  padding: 1em;
+  max-width: 950px;
+  margin: 100px auto;
 }
 
 div {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 h1 {
-    color: var(--desire);
-    font-size: 36px;
+  font-size: 36px;
+  color: var(--desire);
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "Jost";
+  color: var(--desire);
 }
 
 .information {
-    display: block;
-
-    font-family: "Poppins";
-    color: var(--text);
-    opacity: 0.6;
+  display: block;
+  opacity: 0.6;
+  color: var(--text);
+  font-family: "Poppins";
+  background-color: transparent;
 }
 
 p {
-    font-family: "Poppins";
-    color: var(--text);
+  font-size: 16px;
+  color: var(--text);
+  font-family: "Poppins";
 }
 
 a {
-    display: block;
+  display: block;
+  color: var(--desire);
+  text-decoration: none;
+}
 
-    text-decoration: none;
-    color: var(--desire);
+p a {
+  display: inline;
 }
 
 @media screen and (max-width: 1000px) {
-    h1, .information, body a {
-        text-align: center;
-    }    
+  h1, .information, body a {
+    text-align: center;
+  }
 }
