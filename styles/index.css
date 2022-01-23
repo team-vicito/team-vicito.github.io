@@ -31,7 +31,7 @@
 .vehicle {
   position: absolute;
 
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin: 0;
   padding: 0;
@@ -60,7 +60,7 @@
 }
 
 #countdown span {
-  color: var(--desire);
+  color: var(--accent);
 }
 
 .timeline {
@@ -73,13 +73,13 @@
 
 .timeline::after {
   position: absolute;
+  content: "";
 
   top: 0;
   left: 1em;
   width: 3px;
-  content: "";
   height: 100%;
-  background-color: var(--desire);
+  background-color: var(--accent);
 }
 
 .timeline h3 {
@@ -90,14 +90,14 @@
 
 .timeline h3::before {
   position: absolute;
+  content: "";
 
   top: 1em;
   z-index: 2;
-  content: "";
   left: 10px;
   width: 15px;
   height: 15px;
-  background-color: var(--desire);
+  background-color: var(--accent);
 
   transform: rotate(45deg);
 }

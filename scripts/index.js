@@ -14,7 +14,7 @@ const updateLinks = (path) => {
     }
   }
 
-  document.getElementById("start").classList.add("active");
+  // document.getElementById("start").classList.add("active");
 }
 
 const applyNavigationShadow = (distance) => {
@@ -30,7 +30,7 @@ const updateScroll = () => {
   const scrolled = window.scrollY;
 
   applyNavigationShadow(scrolled);
-  if (window.innerWidth >= 1118) document.querySelector(".vehicle").style.top = "calc(50% - " + (scrolled / 3) + "px)";
+  if (window.innerWidth >= 1118) document.querySelector(".vehicle").style.top = "calc(40% - " + (scrolled / 3) + "px)";
 }
 
 window.addEventListener("scroll", updateScroll);
@@ -45,6 +45,7 @@ if (burger) {
 updateLinks(`${location.origin}${location.pathname}`);
 
 // TODO: Use
+// TODO: Fix colors
 const setCurrentColorTheme = (theme) => {
   let variables = document.documentElement.style;
 
@@ -52,14 +53,14 @@ const setCurrentColorTheme = (theme) => {
     variables.setProperty("--background", "#121212");
     variables.setProperty("--contrast", "#FEFEFE");
     variables.setProperty("--shadow", "#000000");
-    variables.setProperty("--desire", "#EB3B5A");
+    variables.setProperty("--accent", "#EB3B5A");
     variables.setProperty("--wish", "#EB3B5AAA");
     variables.setProperty("--text", "#FFFFFF");
   } else if (theme == "light") {
     variables.setProperty("--background", "#FFFFFF");
     variables.setProperty("--contrast", "#000000");
     variables.setProperty("--shadow", "#000000");
-    variables.setProperty("--desire", "#EB3B5A");
+    variables.setProperty("--accent", "#EB3B5A");
     variables.setProperty("--wish", "#EB3B5AAA");
     variables.setProperty("--text", "#000000");
   } else {
@@ -73,7 +74,7 @@ if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").match
   localStorage.setItem("currentTheme", "light");
 }
 
-const competition = "1608764400000";
+const competition = "1648166400000";
 
 const getTimeToCompetition = (endtime) => {
   const time = endtime - Date.now();
@@ -128,6 +129,6 @@ const initializeTimer = (selector, endtime) => {
 }
 
 // TODO: Use
-// initializeTimer("#countdown", competition);
+initializeTimer("#countdown", competition);
 
 // TODO: Languages

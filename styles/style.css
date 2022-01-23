@@ -3,11 +3,11 @@
 
 /* GENERAL STUFF */
 :root {
-  --background: #ffffff;
-  --contrast: #000000;
+  --background: #FEFEFE;
+  --contrast: #121212;
   --shadow: #000000;
-  --desire: #eb3b5a;
-  --wish: #eb3b5aaa;
+  --accent: #E5183E;
+  --wish: #E5183EAA;
   --text: #000000;
 }
 
@@ -24,6 +24,8 @@ body {
 }
 
 body section, body footer {
+  position: relative;
+  
   max-width: 1100px;
   padding: 0 1em;
   margin: 0 auto;
@@ -65,19 +67,19 @@ p a {
   position: relative;
 
   color: #000000;
-  color: var(--desire);
+  color: var(--accent);
   text-decoration: none;
 }
 
 p a::after {
   position: absolute;
+  content: "";
 
   left: 0;
   width: 0%;
   top: 1.2em;
   height: 2px;
-  content: "";
-  background-color: var(--desire);
+  background-color: var(--accent);
 
   transition: all 0.2s ease-in-out;
 }
@@ -90,6 +92,7 @@ p a:focus::after {
 }
 
 .link-wrap a {
+  font-size: 28px;
   color: var(--contrast);
 }
 
@@ -123,23 +126,23 @@ nav.shadow {
 
 .link-wrap {
   overflow: hidden;
-  margin-top: 2.35em;
+  margin-top: 2.1em;
 }
 
 .link-wrap a {
   position: relative;
 
   overflow: hidden;
-  font-size: 1.5em;
   text-decoration: none;
   padding: 0 24px 0 24px;
+  font-family: "Jost", "Poppins", sans-serif;
 
   transition: all 0.2s ease-in-out;
 }
 
 .link-wrap a:hover,
 .link-wrap a:focus {
-  color: var(--desire);
+  color: var(--accent);
 
   transition: all 0.2s ease-in-out;
 }
@@ -147,29 +150,30 @@ nav.shadow {
 .link-wrap a::after,
 .link-wrap a::after {
   position: absolute;
+  content: "";
 
   left: 0;
   top: 2em;
   width: 0%;
   height: 4px;
-  content: "";
-  background-color: var(--desire);
+  background-color: var(--accent);
 
   transition: all 0.2s ease-in-out;
 }
 
 .link-wrap a:hover::after,
 .link-wrap a:focus::after {
+  content: "";
+
   width: 100%;
   height: 4px;
-  content: "";
-  background-color: var(--desire);
+  background-color: var(--accent);
 
   transition: all 0.2s ease-in-out;
 }
 
 .link-wrap a.active {
-  color: var(--desire);
+  color: var(--accent);
 }
 
 .burger {
@@ -222,7 +226,7 @@ nav.shadow {
   display: inline;
 
   top: 50%;
-  font-size: 1.5em;
+  font-size: 28px;
   text-shadow: none;
   padding: 0 24px 0 24px;
   transform: translateY(-50%);
@@ -259,7 +263,6 @@ footer a img {
 }
 
 footer a {
-  padding-left: 1em;
   color: var(--text);
   background-color: transparent;
 }
@@ -277,6 +280,8 @@ footer a:hover img {
 }
 
 footer p {
+  display: inline;
+  
   padding: 0;
   opacity: 0.4;
   background-color: transparent;
@@ -300,6 +305,18 @@ footer p:focus {
   background-color: transparent;
 }
 
+.social-wrapper a {
+  padding-left: 1em;
+}
+
+.small-print-wrapper p {
+  padding-right: 1em;
+}
+
+.contact-wrapper p {
+  padding-bottom: 2px;
+}
+
 .anchor {
   display: block;
   position: relative;
@@ -311,6 +328,24 @@ footer p:focus {
 .exclude-shadow {
   box-shadow: none !important;
   text-shadow: none !important;
+}
+
+.note {
+  opacity: 40%;
+  transition: all 0.2s;
+}
+
+.note:hover, .note:focus {
+  opacity: 80%;
+  transition: all 0.2s;
+}
+
+.stretch {
+  height: 69vh; /* Nice */
+}
+
+.article {
+  padding: 0;
 }
 
 /* RESPONSIVENESS */
@@ -427,11 +462,11 @@ footer p:focus {
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #121212;
-    --contrast: #fefefe;
+    --contrast: #FEFEFE;
     --shadow: #000000;
-    --desire: #eb3b5a;
-    --wish: #eb3b5aaa;
-    --text: #ffffff;
+    --accent: #E5183E;
+    --wish: #E5183EAA;
+    --text: #FFFFFF;
   }
 }
 

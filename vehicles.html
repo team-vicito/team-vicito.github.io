@@ -1,9 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html lang="de">
 
 <head>
-  <title>Vicito - Impressum</title>
+  <title>Vicito - Startseite</title>
+  <!-- TODO: Make meta tags -->
   <meta charset="UTF-8">
   <meta name="author" content="David Penkowoj">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +16,11 @@
   <meta name="og:image" content="assets/social/vicito.png">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/vehicles.css">
   <script src="scripts/index.js" defer></script>
 </head>
+
+<!-- TODO: MODEL zu FAHRZEUGE und dann alle prototypen interaktiv listen und ggfs, modelle bieten -->
 
 <body>
   <nav>
@@ -39,27 +43,27 @@
       <div class="line3"></div>
     </div>
   </nav>
-  <main>
+  <main class="stretch">
     <section>
-      <h2>Impressum</h2>
-      <h3>Kontakt</h3>
-      <p>F1 in Schools Team Vicito<br>Roschdohler Weg 11<br>24536 Einfeld<br></p>
-      <p>Allgemeine E-Mail: <a href="mailto:info@vicito.de">info@vicito.de</a></p>
-      <p>Weitere Kontaktmöglichkeiten finden Sie auf unserer <a href="contact.html">Kontaktseite</a>.</p>
-      <h3>Haftungs&shy;hinweis</h3>
-      <p>Unsere Webseite enthält Links zu Inhalten Dritter. Diese verlinkten Seiten wurden zum Zeitpunkt der Verlinkung
-        auf mögliche Rechtsverstöße überprüft. Wir leister keine Gewähr auf die Korrekt- sowie Angebrachtheit der
-        Inhalte Dritter und es ist alleinig der jeweilige Anbieter oder Betreiber dieser Inhalte über eben diese
-        verantwortlichnd. Sollten rechtsverletzende Inhalte festgestellt werden, werden wir diese unverzüglich
-        entfernen.</p>
-      <h3>Daten&shy;schutz&shy;hinweis</h3>
-      <p>Diese Webseite verarbeitet und speichert ausschließlich ihre Sprach- und Gestaltungspräferenzen lokal auf ihrem
-        Endgerät. Zur verbesserten Darstellung der Seite können außerdem die Spezifikationen ihres Webbrowsers oder
-        Endgeräts temporär erhoben und verarbeitet werden. Diese Daten werden jedoch sofort nach der Nutzung verworfen
-        und nicht gespeichert.</p>
-      <h3>Urheber&shy;rechts&shy;hinweis</h3>
-      <p>Diese Webseite wurde von <a href="team.html#david">David Penkowoj</a> gestaltet und geschrieben. Es wurde
-        außerdem die quelloffene Bibliothek <a href="https://github.com/mrdoob/three.js/">three.js</a> verwendet.</p>
+      <h2>Unsere Fahrzeuge</h2>
+    </section>
+    <section id="list">
+      <h3>Filter</h3>
+      <div class="filter-wrapper">
+        <input class="filter" type="checkbox" data-label="Zwischenprototypen">
+        <input class="filter" type="checkbox" data-label="Hauptprototypen">
+        <input class="filter" type="checkbox" data-label="Namen">
+      </div>
+      <!-- TODO: dynamisches anpassen der div container für interaktives lesen -->
+      <h3>Liste der Fahrzeuge</h3>
+      <div class="vehicle">
+        <img src="assets/renders/f.png">
+        <div class="info">
+          <p class="name">Finales Fahrzeug</p>
+          <p class="actions"><a href="#">Technische Genauigkeiten</a><a href="model.html?v=f">3D-Modell</a></p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis expedita ullam excepturi? Officia expedita odio facilis veritatis ipsa ratione.</p>
+        </div>
+      </div>
     </section>
   </main>
   <footer>

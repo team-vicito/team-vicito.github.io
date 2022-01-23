@@ -5,5 +5,7 @@ user-agent: *
 allow: /assets/team/
 allow: /assets/renders/
 
+disallow: /team/
 disallow: /assets/
-disallow: /model-interactive.html
+disallow: /articles/
+disallow: /interactive-model-viewer/

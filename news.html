@@ -3,7 +3,7 @@
 <html lang="de">
 
 <head>
-  <title>Vicito - Modell</title>
+  <title>Vicito - News</title>
   <meta charset="UTF-8">
   <meta name="author" content="David Penkowoj">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +15,8 @@
   <meta name="og:image" content="assets/social/vicito.png">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/model.css">
+  <link rel="stylesheet" href="styles/card.css">
   <script src="scripts/index.js" defer></script>
-<!--   <script src="scripts/model.js" type="module" defer></script> -->
 </head>
 
 <body>
@@ -41,16 +40,27 @@
       <div class="line3"></div>
     </div>
   </nav>
-  <main id="main">
-    <script type="text/javascript">
-      let iframe = document.createElement("iframe");
-      iframe.src = `interactive-model-viewer/public/index.html?m=${new URLSearchParams(window.location.search).get("m")}`;
-      iframe.width = "100%";
-      iframe.height = "100%";
-      iframe.frameBorder = "0";
-      document.querySelector("main").appendChild(iframe);
-    </script>
+  <main class="stretch">
+    <section>
+      <h2>Neues im Team</h2>
+      <h3>Artikel</h3>
+      <p>Lesen Sie unsere Artikel, um Einblicke in die Arbeit unseres Teams zu erlangen!<br>Sie können außerdem unseren <a href="rss.xml">RSS-Feed</a> dieser Seite kostenlos abonnieren, um keine Neuigkeit über unser Team zu verpassen!</p>
+      <p class="article">- <a href="articles/sponsorennewsletter-mai-2021.html">Sponsorennewsletter Mai 2021!</a></p>
+      <p class="article">- <a href="articles/unsere-erste-saison-ist-jetzt-vorbei.html">Unsere erste Saison ist jetzt vorbei!</a></p>
+      <h3>Social-Media</h3>
+    </section>
   </main>
+  <footer>
+    <div class="small-print-wrapper">
+      <p><a href="legal.html">Impressum</a></p>
+      <p><a href="contact.html">Kontakt</a></p>
+    </div>
+    <div class="social-wrapper">
+      <a href="https://www.youtube.com/channel/UCtvMswxdWggvel8fwr5pG7g/"><img src="assets/social/youtube.svg"></a>
+      <a href="https://www.instagram.com/team.vicito/"><img src="assets/social/instagram.svg"></a>
+      <a href="https://tiktok.com/"><img src="assets/social/tiktok.svg"></a>
+    </div>
+  </footer>
 </body>
 
 </html>

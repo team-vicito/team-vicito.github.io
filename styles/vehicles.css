@@ -1,0 +1,73 @@
+.vehicle img {
+  width: 70%;
+}
+
+.vehicle {
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.info p {
+  padding-bottom: 7px;
+}
+
+.info p a {
+  font-family: "Jost", "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.name {
+  font-family: "Jost", "Poppins", sans-serif;
+  font-size: 26px;
+}
+
+.actions a {
+  margin-right: 1em;
+}
+
+.filter-wrapper {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: start;
+}
+
+.filter {
+  display: block;
+
+  font-size: 15px;
+  appearance: none;
+}
+
+.filter::after {
+  display: block;
+
+  margin: 4px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 2px solid var(--accent);
+  background-color: var(--accent);
+
+  transition: all 0.2s;
+}
+
+.filter[data-label], .filter::after, .filter:checked::after {
+  content: attr(data-label);
+
+  font-weight: bold;
+  color: var(--background);
+}
+
+.filter:checked::after {
+  color: var(--accent);
+  background-color: var(--background);
+}
