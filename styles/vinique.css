@@ -1,0 +1,21 @@
+.principle img, .principle p {
+  padding: 1em;
+  text-align: center;
+  background-color: transparent;
+}
+
+.principle {
+  display: flex;
+
+  margin: 1em;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #C61535;
+}
+
+.principle-wrapper {
+  display: flex;
+
+  flex-wrap: wrap;
+}
