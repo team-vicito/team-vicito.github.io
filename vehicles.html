@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/vehicles.css">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/vehicles.js" defer></script>
 </head>
 
 <!-- TODO: MODEL zu FAHRZEUGE und dann alle prototypen interaktiv listen und ggfs, modelle bieten -->
@@ -47,13 +48,15 @@
     <section>
       <h2>Unser Fuhrpark</h2>
     </section>
-    <section id="list">
+    <section>
       <div class="filter-wrapper">
         <input class="filter" type="checkbox" data-label="Hauptmodelle">
         <input class="filter" type="checkbox" data-label="Untermodelle" checked="false">
-        <input class="filter" type="checkbox" data-label="Räder" checked="false">
+        <!-- <input class="filter" type="checkbox" data-label="Räder" checked="false"> -->
         <input class="filter" type="checkbox" data-label="Spitznamen" checked="false">
       </div>
+    </section>
+    <section id="list">
       <!-- TODO: dynamisches anpassen der div container für interaktives lesen
       <div class="vehicle">
         <img src="assets/renders/f.png">
@@ -64,83 +67,103 @@
         </div>
       </div>
       -->
-      <div class="vehicle">
+      <div class="vehicle primary">
         <img src="assets/renders/p1.png">
         <div class="info">
           <p class="name">Prototyp I</p>
+          <p class="name" style="display: none">Mars</p>
           <p class="description">Fertiggestellt am 10.04.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle secondary" style="display: none">
         <img src="assets/renders/p1.1.png">
         <div class="info">
           <p class="name">Prototyp I.I</p>
+          <p class="name" style="display: none">Diana</p>
           <p class="description">Fertiggestellt am 10.04.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle secondary" style="display: none">
         <img src="assets/renders/p1.2.png">
         <div class="info">
           <p class="name">Prototyp I.II</p>
+          <p class="name" style="display: none">Apollo</p>
           <p class="description">Fertiggestellt am 11.04.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle primary">
         <img src="assets/renders/p2.png">
         <div class="info">
           <p class="name">Prototyp II</p>
+          <p class="name" style="display: none">Jupiter</p>
           <p class="description">Fertiggestellt am 15.05.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle secondary" style="display: none">
         <img src="assets/renders/p2.1.png">
         <div class="info">
           <p class="name">Prototyp II.I</p>
+          <p class="name" style="display: none">Minerva</p>
           <p class="description">Fertiggestellt am 15.05.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle secondary" style="display: none">
         <img src="assets/renders/p2.2.png">
         <div class="info">
           <p class="name">Prototyp II.II</p>
+          <p class="name" style="display: none">Vulcanus</p>
           <p class="description">Fertiggestellt am 25.06.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle secondary" style="display: none">
         <img src="assets/renders/p2.3.png">
         <div class="info">
           <p class="name">Prototyp II.III</p>
+          <p class="name" style="display: none">Neptun</p>
           <p class="description">Fertiggestellt am 06.07.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle secondary" style="display: none">
         <img src="assets/renders/p2.4.png">
         <div class="info">
           <p class="name">Prototyp II.IV</p>
+          <p class="name" style="display: none">Merkur</p>
           <p class="description">Fertiggestellt am 08.07.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle secondary" style="display: none">
         <img src="assets/renders/p2.5.png">
         <div class="info">
           <p class="name">Prototyp II.V</p>
+          <p class="name" style="display: none">Vesta</p>
           <p class="description">Fertiggestellt am 24.07.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle primary">
         <img src="assets/renders/p3.png">
         <div class="info">
           <p class="name">Prototyp III</p>
+          <p class="name" style="display: none">Venus</p>
           <p class="description">Fertiggestellt am 25.06.2021</p>
         </div>
       </div>
-      <div class="vehicle">
+      <div class="vehicle primary">
         <img src="assets/renders/p4.png">
         <div class="info">
           <p class="name">Prototyp IV</p>
+          <p class="name" style="display: none">Ceres</p>
           <p class="description">Fertiggestellt am 06.07.2021</p>
         </div>
       </div>
+      <div class="vehicle primary">
+        <img src="assets/renders/f.png">
+        <div class="info">
+          <p class="name">Finales Fahrzeug</p>
+          <p class="name" style="display: none">Victoria</p>
+          <p class="description">Fertiggestellt am 14.10.2021</p>
+        </div>
+      </div>
+    <!-- 
       <div class="wheel">
         <img src="assets/renders/w1.png">
         <div class="info">
@@ -177,6 +200,8 @@
           <p class="name">Finales Rad</p>
         </div>
       </div>
+    -->
+      <p class="empty stretch" style="display: none">Es konnten keine gefilterten Inhalte gefunden werden.</p>
     </section>
   </main>
   <footer>

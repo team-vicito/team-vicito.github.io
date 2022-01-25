@@ -1,19 +1,39 @@
-.vehicle img {
-  width: 70%;
+#list {
+  display: flex;
+
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+.vehicle img {
+  max-width: 70%;
+}
+
+/* TODO: Fix grey box */
 .vehicle {
   display: flex;
 
+  padding: 30px;
+  max-width: 270px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #232323;
   justify-content: space-between;
-  flex-direction: row;
+}
+
+.vehicle * {
+  text-align: center;
+  background-color: #232323;
 }
 
 .info {
   display: flex;
 
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: center;
 }
 
 .info p {
@@ -21,13 +41,13 @@
 }
 
 .info p a {
-  font-family: "Jost", "Poppins", sans-serif;
   font-size: 18px;
+  font-family: "Jost", "Poppins", sans-serif;
 }
 
 .name {
-  font-family: "Jost", "Poppins", sans-serif;
   font-size: 26px;
+  font-family: "Jost", "Poppins", sans-serif;
 }
 
 .actions a {
@@ -46,12 +66,12 @@
 
   font-size: 15px;
   appearance: none;
+  margin-right: 8px;
 }
 
 .filter::after {
   display: block;
 
-  margin: 4px;
   cursor: pointer;
   padding: 4px 8px;
   border: 2px solid var(--accent);
@@ -71,3 +91,4 @@
   color: var(--accent);
   background-color: var(--background);
 }
+
