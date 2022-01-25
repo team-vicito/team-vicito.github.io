@@ -4,11 +4,17 @@
   background-color: transparent;
 }
 
+.principle img {
+  width: 50px;
+  margin-top: 10px;
+}
+
 .principle {
   display: flex;
 
   margin: 1em;
   width: 30%;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #C61535;
@@ -19,3 +25,11 @@
 
   flex-wrap: wrap;
 }
+
+.image-wrapper {
+  display: flex;
+
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
