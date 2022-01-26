@@ -8,6 +8,7 @@
   --shadow: #000000;
   --accent: #E5183E;
   --wish: #E5183EAA;
+  --link: #FF0033;
   --text: #000000;
 }
 
@@ -67,7 +68,7 @@ p a {
   position: relative;
 
   color: #000000;
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -94,7 +95,10 @@ p a:focus::after {
 .link-wrap a {
   font-size: 28px;
   color: var(--contrast);
+  background-color: transparent;
 }
+
+/* TODO: Set appropriate image size */
 
 /* NAVIGATION AND CHILDREN */
 nav {
@@ -463,9 +467,7 @@ footer p:focus {
   :root {
     --background: #121212;
     --contrast: #FEFEFE;
-    --shadow: #000000;
-    --accent: #E5183E;
-    --wish: #E5183EAA;
+    --link: #E5183E;
     --text: #FFFFFF;
   }
 }

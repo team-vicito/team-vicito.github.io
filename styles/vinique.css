@@ -1,5 +1,6 @@
 .principle img, .principle p {
   padding: 1em;
+  color: #FFFFFF;
   text-align: center;
   background-color: transparent;
 }
@@ -12,8 +13,9 @@
 .principle {
   display: flex;
 
-  margin: 1em;
   width: 30%;
+  margin: 1em;
+  min-width: 250px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +26,7 @@
   display: flex;
 
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image-wrapper {
@@ -33,3 +36,10 @@
   gap: 1.5em;
 }
 
+.outer-mint-image {
+  flex: 9;
+} 
+
+.inner-mint-image {
+  flex: 10;
+} 
