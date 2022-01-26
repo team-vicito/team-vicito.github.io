@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <title>Vicito - Startseite</title>
+  <!-- TODO: Make meta tags -->
+  <meta charset="UTF-8">
+  <meta name="author" content="David Penkowoj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="st:section" content="Die Webseite des F1 in Schools Teams Vicito!">
+  <meta name="description" content="Die Webseite des F1 in Schools Teams Vicito!">
+  <meta name="twitter:description" content="Die Webseite des F1 in Schools Teams Vicito!">
+  <meta name="og:description" content="Die Webseite des F1 in Schools Teams Vicito!">
+  <meta name="twitter:image" content="assets/social/vicito.png">
+  <meta name="og:image" content="assets/social/vicito.png">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/vehicles.css">
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/vehicles.js" defer></script>
+</head>
+
+<!-- TODO: MODEL zu FAHRZEUGE und dann alle prototypen interaktiv listen und ggfs, modelle bieten -->
+
+<body>
+  <nav>
+    <div class="logo-wrap">
+      <a href="index.html">
+        <img src="assets/logo.svg" alt="Vicito Logo">
+        <p class="logo-text">VICITO</p>
+      </a>
+    </div>
+    <div class="link-wrap">
+      <a href="news.html">News</a>
+      <a href="team.html">Team</a>
+      <a href="vehicles.html">Fahrzeuge</a>
+      <a href="sponsors.html">Sponsoren</a>
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <main>
+    <section>
+      <h2>Unser Fuhrpark</h2>
+    </section>
+    <section>
+      <div class="filter-wrapper">
+        <input class="filter" type="checkbox" data-label="Hauptmodelle">
+        <input class="filter" type="checkbox" data-label="Untermodelle" checked="false">
+        <!-- TODO: Räder einfügen -->
+        <!-- <input class="filter" type="checkbox" data-label="Räder" checked="false"> -->
+        <input class="filter" type="checkbox" data-label="Spitznamen" checked="false">
+      </div>
+    </section>
+    <section id="list">
+      <div class="vehicle primary">
+        <img src="assets/renders/p1.png">
+        <div class="info">
+          <p class="name">Prototyp I</p>
+          <p class="name" style="display: none">Mars</p>
+          <p class="description">Fertiggestellt am 10.04.2021</p>
+        </div>
+      </div>
+      <div class="vehicle secondary" style="display: none">
+        <img src="assets/renders/p1.1.png">
+        <div class="info">
+          <p class="name">Prototyp I.I</p>
+          <p class="name" style="display: none">Diana</p>
+          <p class="description">Fertiggestellt am 10.04.2021</p>
+        </div>
+      </div>
+      <div class="vehicle secondary" style="display: none">
+        <img src="assets/renders/p1.2.png">
+        <div class="info">
+          <p class="name">Prototyp I.II</p>
+          <p class="name" style="display: none">Apollo</p>
+          <p class="description">Fertiggestellt am 11.04.2021</p>
+        </div>
+      </div>
+      <div class="vehicle primary">
+        <img src="assets/renders/p2.png">
+        <div class="info">
+          <p class="name">Prototyp II</p>
+          <p class="name" style="display: none">Jupiter</p>
+          <p class="description">Fertiggestellt am 15.05.2021</p>
+        </div>
+      </div>
+      <div class="vehicle secondary" style="display: none">
+        <img src="assets/renders/p2.1.png">
+        <div class="info">
+          <p class="name">Prototyp II.I</p>
+          <p class="name" style="display: none">Minerva</p>
+          <p class="description">Fertiggestellt am 15.05.2021</p>
+        </div>
+      </div>
+      <div class="vehicle secondary" style="display: none">
+        <img src="assets/renders/p2.2.png">
+        <div class="info">
+          <p class="name">Prototyp II.II</p>
+          <p class="name" style="display: none">Vulcanus</p>
+          <p class="description">Fertiggestellt am 25.06.2021</p>
+        </div>
+      </div>
+      <div class="vehicle secondary" style="display: none">
+        <img src="assets/renders/p2.3.png">
+        <div class="info">
+          <p class="name">Prototyp II.III</p>
+          <p class="name" style="display: none">Neptun</p>
+          <p class="description">Fertiggestellt am 06.07.2021</p>
+        </div>
+      </div>
+      <div class="vehicle secondary" style="display: none">
+        <img src="assets/renders/p2.4.png">
+        <div class="info">
+          <p class="name">Prototyp II.IV</p>
+          <p class="name" style="display: none">Merkur</p>
+          <p class="description">Fertiggestellt am 08.07.2021</p>
+        </div>
+      </div>
+      <div class="vehicle secondary" style="display: none">
+        <img src="assets/renders/p2.5.png">
+        <div class="info">
+          <p class="name">Prototyp II.V</p>
+          <p class="name" style="display: none">Vesta</p>
+          <p class="description">Fertiggestellt am 24.07.2021</p>
+        </div>
+      </div>
+      <div class="vehicle primary">
+        <img src="assets/renders/p3.png">
+        <div class="info">
+          <p class="name">Prototyp III</p>
+          <p class="name" style="display: none">Venus</p>
+          <p class="description">Fertiggestellt am 25.06.2021</p>
+        </div>
+      </div>
+      <div class="vehicle primary">
+        <img src="assets/renders/p4.png">
+        <div class="info">
+          <p class="name">Prototyp IV</p>
+          <p class="name" style="display: none">Ceres</p>
+          <p class="description">Fertiggestellt am 06.07.2021</p>
+        </div>
+      </div>
+      <div class="vehicle primary">
+        <img src="assets/renders/f.png">
+        <div class="info">
+          <p class="name">Finales Fahrzeug</p>
+          <p class="name" style="display: none">Victoria</p>
+          <p class="description">Fertiggestellt am 14.10.2021</p>
+        </div>
+      </div>
+    <!-- 
+      <div class="wheel">
+        <img src="assets/renders/w1.png">
+        <div class="info">
+          <p class="name">Rad I</p>
+        </div>
+      </div>
+      <div class="wheel">
+        <img src="assets/renders/w2.png">
+        <div class="info">
+          <p class="name">Rad II</p>
+        </div>
+      </div>
+      <div class="wheel">
+        <img src="assets/renders/w3.png">
+        <div class="info">
+          <p class="name">Rad III</p>
+        </div>
+      </div>
+      <div class="wheel">
+        <img src="assets/renders/w4.png">
+        <div class="info">
+          <p class="name">Rad IV</p>
+        </div>
+      </div>
+      <div class="wheel">
+        <img src="assets/renders/w5.png">
+        <div class="info">
+          <p class="name">Rad V</p>
+        </div>
+      </div>
+      <div class="wheel">
+        <img src="assets/renders/wf.png">
+        <div class="info">
+          <p class="name">Finales Rad</p>
+        </div>
+      </div>
+    -->
+      <p class="empty stretch" style="display: none">Es konnten keine gefilterten Inhalte gefunden werden.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="small-print-wrapper">
+      <p><a href="legal.html">Impressum</a></p>
+      <p><a href="contact.html">Kontakt</a></p>
+    </div>
+    <div class="social-wrapper">
+      <a href="https://www.youtube.com/channel/UCtvMswxdWggvel8fwr5pG7g/"><img src="assets/social/youtube.svg"></a>
+      <a href="https://www.instagram.com/team.vicito/"><img src="assets/social/instagram.svg"></a>
+      <a href="https://tiktok.com/"><img src="assets/social/tiktok.svg"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.principle img, .principle p {
+  padding: 1em;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: transparent;
+}
+
+.principle img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.principle {
+  display: flex;
+
+  width: 30%;
+  margin: 1em;
+  min-width: 250px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #C61535;
+}
+
+.principle-wrapper {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-wrapper {
+  display: flex;
+
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.outer-mint-image {
+  flex: 9;
+} 
+
+.inner-mint-image {
+  flex: 10;
+} 

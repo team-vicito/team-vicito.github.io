@@ -17,21 +17,22 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/model.css">
   <script src="scripts/index.js" defer></script>
-  <script src="scripts/model.js" type="module" defer></script>
+<!--   <script src="scripts/model.js" type="module" defer></script> -->
 </head>
 
 <body>
   <nav>
     <div class="logo-wrap">
-      <img src="../assets/logo.svg" alt="Vicito Logo">
-      <p class="logo-text">Vicito</p>
+      <a href="index.html">
+        <img src="assets/logo.svg" alt="Vicito Logo">
+        <p class="logo-text">VICITO</p>
+      </a>
     </div>
     <div class="link-wrap">
-      <a id="start" href="../index.html">Startseite</a>
-      <a href="sponsors.html">Sponsoren</a>
+      <a href="news.html">News</a>
       <a href="team.html">Team</a>
-      <a href="model.html">Modell</a>
-      <a href="legal.html">Impressum</a>
+      <a href="vehicles.html">Fahrzeuge</a>
+      <a href="sponsors.html">Sponsoren</a>
     </div>
     <div class="burger">
       <div class="line1"></div>
@@ -40,18 +41,14 @@
     </div>
   </nav>
   <main id="main">
-    <div class="info disclaimer">
-      <p class="exclude-shadow"><span class="highlight">Achtung:</span> Details möglicherweise abweichend!</p>
-    </div>
-    <div class="error">
-      <img src="assets/error.svg" alt="Fehler">
-    </div>
-    <p class="error">Es ist ein Scriptfehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
-    <div class="info">
-      <p class="exclude-shadow"><span class="highlight">Mausrad:</span> Kameraentfernung ändern</p>
-      <p class="exclude-shadow"><span class="highlight">Linke Maustaste:</span> Kamera rotieren</p>
-      <p class="exclude-shadow"><span class="highlight">Rechte Maustaste:</span> Kamera bewegen</p>
-    </div>
+    <script type="text/javascript">
+      let iframe = document.createElement("iframe");
+      iframe.src = `interactive-model-viewer/public/index.html?m=${new URLSearchParams(window.location.search).get("m")}`;
+      iframe.width = "100%";
+      iframe.height = "100%";
+      iframe.frameBorder = "0";
+      document.querySelector("main").appendChild(iframe);
+    </script>
   </main>
 </body>
 

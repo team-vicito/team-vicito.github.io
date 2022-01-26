@@ -10,13 +10,13 @@ div {
 
 h1 {
   font-size: 36px;
-  color: var(--desire);
+  color: var(--accent);
 }
 
 h2 {
   font-size: 26px;
   font-family: "Jost";
-  color: var(--desire);
+  color: var(--accent);
 }
 
 .information {
@@ -35,7 +35,7 @@ p {
 
 a {
   display: block;
-  color: var(--desire);
+  color: var(--accent);
   text-decoration: none;
 }
 

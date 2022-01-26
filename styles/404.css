@@ -1,0 +1,17 @@
+h1 {
+  font-weight: 100;
+  color: var(--text);
+  padding-bottom: 0.5em;
+}
+
+.center {
+  display: flex;
+
+  height: 90vh;
+  max-width: 90vw;
+  padding: 5vh 5vw;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

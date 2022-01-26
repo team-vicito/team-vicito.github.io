@@ -1,0 +1,98 @@
+#list {
+  display: flex;
+
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.vehicle img {
+  max-width: 100%;
+}
+
+.vehicle {
+  display: flex;
+
+  padding: 30px;
+  max-width: 270px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0000001A;
+  justify-content: space-between;
+}
+
+.vehicle * {
+  text-align: center;
+  background-color: transparent;
+}
+
+.info {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info p {
+  padding-bottom: 7px;
+}
+
+.info p a {
+  font-size: 18px;
+  font-family: "Jost", "Poppins", sans-serif;
+}
+
+.name {
+  font-size: 26px;
+  font-family: "Jost", "Poppins", sans-serif;
+}
+
+.actions a {
+  margin-right: 1em;
+}
+
+.filter-wrapper {
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.filter {
+  display: block;
+
+  font-size: 15px;
+  appearance: none;
+  margin: 0 8px 8px 0;
+}
+
+.filter::after {
+  display: block;
+
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 2px solid var(--accent);
+  background-color: var(--accent);
+
+  transition: all 0.2s;
+}
+
+.filter[data-label], .filter::after, .filter:checked::after {
+  content: attr(data-label);
+
+  font-weight: bold;
+  color: var(--background);
+}
+
+.filter:checked::after {
+  color: var(--accent);
+  background-color: var(--background);
+}
+
+@media screen and (max-width: 1000px) {
+  .filter-wrapper {
+    justify-content: center;
+  }
+}
