@@ -30,7 +30,7 @@ const updateScroll = () => {
   const scrolled = window.scrollY;
 
   applyNavigationShadow(scrolled);
-  if (window.innerWidth >= 1118) document.querySelector(".vehicle").style.top = "calc(40% - " + (scrolled / 3) + "px)";
+  if (window.innerWidth >= 1118) document.querySelector(".vehicle").style.top = "calc(35% - " + (scrolled / 3) + "px)";
 }
 
 window.addEventListener("scroll", updateScroll);

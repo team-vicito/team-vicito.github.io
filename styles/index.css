@@ -7,7 +7,7 @@
 .subtitle {
   position: absolute;
 
-  top: 40%;
+  top: 35%;
   left: 50%;
   z-index: 1;
   width: 60vw;
@@ -23,7 +23,7 @@
 }
 
 .subtitle {
-  top: 50%;
+  top: 45%;
   font-size: 24px;
   background-color: transparent;
 }
@@ -31,7 +31,7 @@
 .vehicle {
   position: absolute;
 
-  top: 40%;
+  top: 35%;
   left: 50%;
   margin: 0;
   padding: 0;
@@ -43,14 +43,10 @@
   animation: deblur 1s ease-in-out;
 }
 
-.mini-render {
-  width: 40%;
-}
-
 #scrolling-indicator {
   position: absolute;
 
-  top: 75%;
+  top: 65%;
   width: 4em;
   z-index: 2;
   left: calc(50% - 2em);
@@ -62,45 +58,6 @@
 
 #countdown span {
   color: var(--link);
-}
-
-.timeline {
-  position: relative;
-}
-
-.timeline * {
-  padding-left: 75px;
-}
-
-.timeline::after {
-  position: absolute;
-  content: "";
-
-  top: 0;
-  left: 1em;
-  width: 3px;
-  height: 100%;
-  background-color: var(--accent);
-}
-
-.timeline h3 {
-  position: relative;
-
-  overflow: hidden;
-}
-
-.timeline h3::before {
-  position: absolute;
-  content: "";
-
-  top: 1em;
-  z-index: 2;
-  left: 10px;
-  width: 15px;
-  height: 15px;
-  background-color: var(--accent);
-
-  transform: rotate(45deg);
 }
 
 /* RESPONSIVENESS */
@@ -125,22 +82,18 @@
     top: 33%;
   }
 
-  .mini-render {
-    transform: translateX(50%);
-  }
-
   #scrolling-indicator {
-    top: 80%;
+    top: 60%;
   }
 }
 
 @media screen and (max-width: 670px) {
-  .vehicle {
-    top: 62%;
+  .title {
+    top: 15%;
   }
 
-  .mini-render {
-    display: none !important;
+  .vehicle {
+    top: 40%;
   }
 }
 
