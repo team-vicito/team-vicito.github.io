@@ -118,8 +118,16 @@
     padding: 0 0 10px 0;
   }
 
-  .card .image {
-    display: none;
+  .card {
+    flex-direction: column;
+  }
+
+  .card-spacer, .card .image {
+    margin-right: 0;
+  }
+
+  .team {
+    background-position: center;
   }
 
   footer {
