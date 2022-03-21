@@ -18,6 +18,7 @@
   padding: 30px;
   max-width: 270px;
   align-items: center;
+  text-decoration: none;
   flex-direction: column;
   background-color: #0000001A;
   justify-content: space-between;
